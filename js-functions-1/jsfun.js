@@ -10,6 +10,3 @@ var tripfive = function(){
 tripfive();
 
 */
-
-
-

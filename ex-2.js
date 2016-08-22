@@ -6,7 +6,7 @@ function phoneNumber() {
     var info = prompt("Enter your phone number, Trust me");
     if (info && info.match(/^\d{3}-\d{3}-\d{4}$/)) {
         alert("WOW! you actually trust me?");
-        validDate();
+
     } else {
         alert("OUCH :(");
 
@@ -40,10 +40,7 @@ function postCode() {
     var valid = true;
     for (var i = 0; i < postalCode.length; i++) {
         var char = postalCode[i];
-        if (char == 0 && postalCode.length === 5) {} else if (char == 1 && postalCode.length === 5) {} else if (char == 2 && postalCode.length === 5)
-        {} else if (char == 3 && postalCode.length === 5) {} else if (char == 4 && postalCode.length === 5) {} else if (char == 5 && postalCode.length === 5)
-        {} else if (char == 6 && postalCode.length === 5) {} else if (char == 7 && postalCode.length === 5) {} else if (char == 8 && postalCode.length === 5)
-        {} else if (char == 9 && postalCode.length === 5) {} else {
+        if (char == 0 && postalCode.length === 5) {} else if (char == 1 && postalCode.length === 5) {} else if (char == 2 && postalCode.length === 5) {} else if (char == 3 && postalCode.length === 5) {} else if (char == 4 && postalCode.length === 5) {} else if (char == 5 && postalCode.length === 5) {} else if (char == 6 && postalCode.length === 5) {} else if (char == 7 && postalCode.length === 5) {} else if (char == 8 && postalCode.length === 5) {} else if (char == 9 && postalCode.length === 5) {} else {
 
             valid = false;
         }

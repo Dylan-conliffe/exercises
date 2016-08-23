@@ -1,14 +1,26 @@
-angular.module('friends',[])
+/* angular.module('friends',[])
 .controller('friendsbutt',friendsbuttController);
 
 function friendsbuttController (){
+console.log('Y u Do this');
 var fbutton = this;
- fbutton.friendclick = friendclick;
+}
+// fbutton.fbuttonClick = function (){
+   // console.log('stop');
 
-function friendclick(){
-    console.log.apply ("clicked")
+
+
+
+    fbutton.curses = [{
+        curse: 'Fuck',
+        uses: 'many',
+        times: 'anytime',
+         used: 22,
+    }];
+ }
+
    
 }
 
-}
 
+/*

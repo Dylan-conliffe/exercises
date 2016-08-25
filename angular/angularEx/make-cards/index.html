@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html ng-app="MagicCards">
+
+<head>
+    <title> Teh Store of Magic</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body ng-controller="GatherCards as Gcards">
+
+    <section  >
+        <div class=" body" ng-repeat="card in Gcards.cards">
+         <h4> {{card.name}} </h4>
+            <div class="wrapper"><img class= "image" ng-src="{{card.art}}"> </div>
+            <ul >
+                 <li> Mana Color: {{card.manaColor}}</li>
+                 <li>Power:{{card.power}}</li>
+                 <li>Toughness:{{card.toughness}}</li>
+            </ul>  
+        </div>
+         <!-- <form ng-submit="Gcards.newCard()">
+            <h1>Create a magic card!</h1>
+            <hr>
+            <input type="text" placeholder="Name"  ng-model="Gcards.newCard.name"/>
+            <input type="text" placeholder="Mana Color" ng-model="Gcards.newCard.manaColor"/>
+            <input type="text" placeholder="Power"  ng-model="Gcards.newCard.power"/>
+            <input type="text" placeholder="Toughness" ng-model="Gcards.newCard.toughness"/>
+            <button type="submit">Shazaam!!!</button>
+        </form>-->
+    </section>
+<hr>
+
+  
+
+    <section ng-controller="GatherCards2 as Gcards2">
+        <ul>
+            <li ng-repeat="card in Gcards2.cards"> </li>
+            <h4>  </h4>
+
+        </ul>
+
+    </section>
+
+
+</body>
+
+</html>

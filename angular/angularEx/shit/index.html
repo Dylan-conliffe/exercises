@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html ng-app="IOM">
+
+<head>
+    <title>yaaaaaaas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <body>
+        <h1>  teh Dank Tank </h1>
+        <section id="dank" ng-controller="dankTroller as dCtrl">
+            
+            <ul>
+                <li ng-repeat="meme in dCtrl.memes" </li>
+                <h4>{{meme.name}}</h4>
+                <img ng-src ="{{meme.picture}}">
+                <span>{{meme.funniness}} - {{meme.about}} </span>
+            </ul>
+        </section>
+        <hr>
+        <section id="key" ng-controller="keyboardCatroller as kCtrl">
+            <li ng-repeat="meme in kCtrl.memes" </li>
+                <h4>{{meme.name}}</h4>
+                <img ng-src ="{{meme.picture}}">
+                <span>{{meme.funniness}} - {{meme.about}} </span>
+           
+        </section>
+    </body>
+</head>
+
+</html>

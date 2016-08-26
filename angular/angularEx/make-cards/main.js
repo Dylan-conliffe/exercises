@@ -9,7 +9,15 @@ GatherCards2Controller.$inject = ["CardFactory"];
 function GatherCardsController (CardFactory){
     console.log('doyouworkdoe?');
     var Gcards = this;
-Gcards.cards = CardFactory.CardList;
+ Gcards.cards = CardFactory.CardList;
+console.log('do YOU WORK?')
+
+ Gcards.AddCard = function() {
+
+    Gcards.cards.push( Gcards.newCard );
+    
+        Gcards.newCard = {};
+    };
 }
 
 
@@ -49,6 +57,7 @@ var CardList = [
      art: 'http://www.thefamouspeople.com/profiles/images/pitbull-7.jpg',
 },
 ];
+
 
 
 return {

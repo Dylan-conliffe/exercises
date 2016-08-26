@@ -1,6 +1,8 @@
 section {
     width: 100%;
     text-align: center;
+    background: deeppink;
+   
     
 }
 
@@ -15,7 +17,8 @@ section {
     width:300px;
     height: 500px;
     margin:10px;
-
+    font-family: 'Knewave', cursive;
+   
 }
 .wrapper{
     height: 150px;
@@ -33,9 +36,64 @@ li {
     padding: 10px;
     list-style: none;
     font-size: larger;
+    
 }
 
 h4 {
     text-align: center;
     font-style: italic;
+    font-family: 'Monoton', cursive;
+   
+}
+
+h1 {
+     font-family: 'Fontdiner Swanky', cursive;
+     text-align: center;
+     margin-bottom: 10%;
+    
+}
+
+input {  
+padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+    
+}
+h2 {  
+     font-family: 'Fontdiner Swanky', cursive;
+     text-align: center;
+     text-align: center;
+     margin: 10%;
+     background-color: deeppink;
+     font-size: 50px;
+
+     
+    
+}
+body{ 
+    background-color: deeppink;
+
+}
+.button{
+    
+   padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: lime;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px deeppink;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
 }

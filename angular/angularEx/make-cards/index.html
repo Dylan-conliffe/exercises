@@ -7,34 +7,40 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <script src="main.js"></script>
     <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Graduate|Knewave|Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Graduate|Knewave" rel="stylesheet">
+
 
 </head>
 
 <body ng-controller="GatherCards as Gcards">
+            <h2>Welcome to the Magic Party!</h2>
 
-    <section  >
+    <section>
         <div class=" body" ng-repeat="card in Gcards.cards">
-         <h4> {{card.name}} </h4>
-            <div class="wrapper"><img class= "image" ng-src="{{card.art}}"> </div>
-            <ul >
-                 <li> Mana Color: {{card.manaColor}}</li>
-                 <li>Power:{{card.power}}</li>
-                 <li>Toughness:{{card.toughness}}</li>
-            </ul>  
+            <h4> {{card.name}} </h4>
+            <div class="wrapper"><img class="image" ng-src="{{card.art}}"> </div>
+            <ul>
+                <li> Mana Color: {{card.manaColor}}</li>
+                <li>Power: {{card.power}}</li>
+                <li>Toughness: {{card.toughness}}</li>
+            </ul>
         </div>
-         <!-- <form ng-submit="Gcards.newCard()">
+        <form ng-submit="Gcards.AddCard()">
             <h1>Create a magic card!</h1>
             <hr>
-            <input type="text" placeholder="Name"  ng-model="Gcards.newCard.name"/>
-            <input type="text" placeholder="Mana Color" ng-model="Gcards.newCard.manaColor"/>
-            <input type="text" placeholder="Power"  ng-model="Gcards.newCard.power"/>
-            <input type="text" placeholder="Toughness" ng-model="Gcards.newCard.toughness"/>
-            <button type="submit">Shazaam!!!</button>
-        </form>-->
+            <input type="text" placeholder="Name" ng-model="Gcards.newCard.name" />
+            <input type="text" placeholder="Mana Color" ng-model="Gcards.newCard.manaColor" />
+            <input type="text" placeholder="Power" ng-model="Gcards.newCard.power" />
+            <input type="text" placeholder="Toughness" ng-model="Gcards.newCard.toughness" />
+            <input type="text" placeholder="art" ng-model="Gcards.newCard.art" />
+            <button class="button"type="submit">Shazaam!!!</button>
+        </form>
     </section>
-<hr>
+    <hr>
 
-  
+
 
     <section ng-controller="GatherCards2 as Gcards2">
         <ul>
